@@ -205,6 +205,7 @@ header{
 	height:250px;
 	margin:0 auto;
 }
+
 .myname{
 	margin-bottom:8px;
 }
@@ -271,10 +272,112 @@ footer{
 
 /* タブレット縦置きサイズ(768px)程度の画面の大きさ以下に適用される設定です */
 @media screen and (max-width:768px) { 
-	*{}
-	header{}
+	header{
+		width:100%;
+	}
+	.header-contents{
+		width:100%;
+	}
+	.nav-list{
+		float:right;
+	}
+
+	.nav-list-item{
+		display:inline-block;
+		list-style: none;
+		margin:25px 30px;
+		font-size: 16px;
+	}
+
 	.main-visual{
+		width:100%;
 		height:750px;
 		background-image: url(img/code.png);
+	}
+	.main-visual-content{
+		width:100%;
+	}
+	.main-visual-content h1{
+		font-size:40px;
+	}
+	.main-visual-content p{
+		font-size:18%;
+	}
+
+
+	.content{
+	}
+	.top{
+	}
+	.headline{
+	}
+	.border{
+	}
+	.head-text{
+	}
+
+
+	.portfolio{
+	}
+	.portfolio-wrapper{
+		width:100%;
+	}
+	.portfolio-image{
+		float:none;
+		width:300px;
+		height:250px;
+	}
+	.img1{
+		background-image:none;
+		width:0;
+		height:0;
+	}
+	.img2{
+		background-image: url(img/websuku.png);
+		background-size:cover;
+	    background-position: center;
+	    margin:0 0 10px 0;
+	}
+	.img3{
+		background-image:none;
+		width:0;
+		height:0;
+	}
+	.img4{
+		background-image: url(img/webcamp.png);
+		background-size:cover;
+	    background-position: center;
+	    margin:0 0 10px 0;
+	}
+	.img5{
+		background-image: none;
+		width:0;
+		height:0;
+	}
+	.img6{
+		background-image: url(img/webcamp-mother.png);
+		background-size:cover;
+	    background-position: center;
+	}
+	.feature{
+	}
+	.feature-wrapper{
+		width:100%;
+	}
+	.feature-box{
+		float:none;
+	}
+	.profile{
+	}
+	.profile-wrapper{
+		width:100%;
+	}
+	.contact{
+	}
+	.contact-wrapper{
+		width:100%;
+	}
+	.contact-box {
+		float:none;
 	}
 }
