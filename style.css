@@ -5,52 +5,76 @@
   font-family: sans-serif;
   color:#000000;
 }
-
 a{
   text-decoration:none;
   color:#FFF;
 }
-
 h4{
 	font-size:20px;
 }
-
 .clearfix::after{
   content:"";
   display: block;
   clear: both;
 }
-
-
-
+/*-------------------<header>-------------------*/
 header{
 	width: 100%;
 	height: 70px;
 	background-color:#EC715F;
 
 }
-
-.header-contents{
+.header-content{
 	width:1024px;
 	margin:0 auto;
 }
-
 .header-logo{
 	height:70px;
 	float:left;
 }
-
+/*-------------------ハンバーガーメニュー-------------------*/
+.menu-icon{
+	width:40px;
+	height:44px;
+	float:right;
+	margin:3px 8px;
+	color:#FFF;
+	border:solid 1.5px;
+	display:none;
+}
+.menu-icon-borders{
+	margin:0 auto;
+	width:30px;
+	height:30px;
+	color:#FFF;
+}
+.menu-icon-border1{
+	margin-top:9px;
+	border-bottom:solid 1.5px;
+	color:#FFF;
+}
+.menu-icon-border2{
+	margin-top:9px;
+	border-bottom:solid 1.5px;
+	color:#FFF;
+}
+.menu-icon-border3{
+	margin-top:9px;
+	border-bottom:solid 1.5px;
+	color:#FFF;
+}
+/*-------------------<nav-list>-------------------*/
 .nav-list{
 	float:right;
 }
-
 .nav-list-item{
 	display:inline-block;
 	list-style: none;
-	margin:25px 30px;
+	line-height: 70px;
+	margin:0 30px;
 	font-size: 16px;
 }
-
+/*-------------------<main-visual>-------------------*/
 .main-visual{
 	width:100%;
 	height:650px;
@@ -58,28 +82,23 @@ header{
 	background-size:cover;
     background-position: center;
 }
-
 .main-visual-content{
 	padding-top:200px;
     text-align: center;
 }
-
-.main-visual-content h1{
+.main-visual-content-h1{
 	font-size:64px;
 	color:#FAFAFA;
 }
-
-.main-visual-content p{
+.main-visual-content-p{
 	font-size:20px;
 	padding-top:10px;
 	color:#FAFAFA;
 }
-
-
-
-
+/*---------portfolio,feature,profile,contactの共通部分---------*/
 .content{
-	padding:90px 0;
+	padding-top:90px;
+	padding-bottom:90px;
 }
 
 .headline{
@@ -96,12 +115,10 @@ header{
 .head-text{
 	font-size:16px;
 	text-align: center;
-	padding:30px 0;　/*上下に30pxの余白*/
+	padding-top:30px;
+	padding-bottom:30px;
 }
-
-
-
-
+/*-------------------<portfolio>-------------------*/
 .portfolio{
 	width:100%;
 	background-color: #ECEFF1;
@@ -149,42 +166,34 @@ header{
 	background-size:cover;
     background-position: center;
 }
-
-
-
-
-
+/*-------------------<feature>-------------------*/
 .feature{
 	width:100%;
 }
-
 .feature-wrapper{
 	width:980px;
 	margin:0 auto;
 }
-
 .feature-box {
 	width:320px;
 	float:left;
+	text-align: center;
 }
-
 .feature-box i {
   display:inline-block;
-  text-align: center;
-  width:60px;
+  margin:0 auto;
+  font-size:60px;
 }
-
 .feature-box h4{
-	text-align: center;
 	margin:10px 0;
 }
-
+.feature-box-text{
+	text-align: left;
+}
 .feature-box-center{
 	margin:0 10px 0 10px;
 }
-
-
-
+/*-------------------<profile>-------------------*/
 .profile{
 	width:100%;
 	background-color: #ECEFF1;
@@ -205,7 +214,6 @@ header{
 	height:250px;
 	margin:0 auto;
 }
-
 .myname{
 	margin-bottom:8px;
 }
@@ -215,14 +223,10 @@ header{
 .profile-text p{
 	font-size:16px;
 }
-
-
-
-
+/*-------------------<contact>-------------------*/
 .contact{
 	width:100%;
 }
-
 .contact-wrapper{
 	width:800px;
 	margin:0 auto;
@@ -231,101 +235,130 @@ header{
 	width:400px;
 	float:left;
 }
+.mail-tell-box{
+	width:190px;
+	display:block;
+	margin:0 auto;
+}
 .contact-mail{
-	margin:0 auto;
-	margin-bottom:20px;
+	display:block;
+	padding-bottom:20px;
+
 }
-.contact-mail p{
-	font-size:5px;
+.mail-p{
 	margin-top:5px;
 }
-
+.mail-border{
+	width:8em;
+	border-bottom:solid 1px;
+}
 .contact-tell{
-	margin:0 auto;
+	display:block;
+	margin-top:20px;
 }
-
-.contact-tell p{
-	font-size:5px;
+.tell-p{
 	margin-top:5px;
+}
+.tell-border{
+	width:8em;
+	border-bottom:solid 1px;
+}
+.social-box{
+	width:190px;
+	display:block;
+	margin:0 auto;
 }
 .social{
 	margin-top:5px;
 }
-.social i{
+.fa-facebook{
+	font-size:50px;
 }
-
-
-
+.fa-twitter{
+	font-size:50px;
+	margin:0 20px;
+}
+.fa-instagram{
+	font-size:50px;
+}
+/*-------------------<fooder>-------------------*/
 footer{
 	width:100%;
 	height:60px;
 	background-color:#EC715F;
     text-align:center;
 }
-
 .footer-text{
 	color:#FAFAFA;
-	padding-top:20px;
+	line-height:60px;
 }
 
 
 
 /* タブレット縦置きサイズ(768px)程度の画面の大きさ以下に適用される設定です */
-@media screen and (max-width:768px) { 
+@media screen and (max-width:768px) {
+	/*-------------------<header>-------------------*/
 	header{
 		width:100%;
+		height:50px;
 	}
-	.header-contents{
-		width:100%;
+	.header-content{
+		width:90%;
+		padding-left:5%;
+		padding-right:5%;
+	}
+	.header-logo{
+		height:50px;
 	}
 	.nav-list{
-		float:right;
+		display:none;
 	}
-
-	.nav-list-item{
-		display:inline-block;
-		list-style: none;
-		margin:25px 30px;
-		font-size: 16px;
+	.menu-icon{
+		display:block;
 	}
-
+	/*-------------------<main-visual>-------------------*/
 	.main-visual{
 		width:100%;
 		height:750px;
 		background-image: url(img/code.png);
 	}
 	.main-visual-content{
-		width:100%;
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
 	}
 	.main-visual-content h1{
 		font-size:40px;
 	}
 	.main-visual-content p{
-		font-size:18%;
+		font-size:18px;
 	}
-
-
+	/*---------portfolio,feature,profile,contactの共通部分---------*/
 	.content{
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
 	}
-	.top{
-	}
-	.headline{
-	}
-	.border{
-	}
-	.head-text{
-	}
-
-
+	/*-------------------<portfolio>-------------------*/
 	.portfolio{
+		width:100%;
 	}
 	.portfolio-wrapper{
-		width:100%;
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
 	}
 	.portfolio-image{
 		float:none;
 		width:300px;
 		height:250px;
+	}
+	.portfolio-images{
+		width:100%;
+	}
+	.image-box{
+		width:300px;
+		margin:0 auto;
 	}
 	.img1{
 		background-image:none;
@@ -337,6 +370,7 @@ footer{
 		background-size:cover;
 	    background-position: center;
 	    margin:0 0 10px 0;
+	    display:block;
 	}
 	.img3{
 		background-image:none;
@@ -348,6 +382,7 @@ footer{
 		background-size:cover;
 	    background-position: center;
 	    margin:0 0 10px 0;
+	    display:block;
 	}
 	.img5{
 		background-image: none;
@@ -358,26 +393,67 @@ footer{
 		background-image: url(img/webcamp-mother.png);
 		background-size:cover;
 	    background-position: center;
+	    margin-top:10px;
+	    display:block;
 	}
+	/*-------------------<feature>-------------------*/
 	.feature{
+		width:100%;
 	}
 	.feature-wrapper{
-		width:100%;
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
 	}
 	.feature-box{
+		width:320px;
 		float:none;
+		margin:0 auto;
 	}
+	.feature-box i {
+		margin-top:10px;
+	}
+	/*-------------------<profile>-------------------*/
 	.profile{
+		width:100%;
 	}
 	.profile-wrapper{
-		width:100%;
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
 	}
+	.profile-box{
+		width: 100%;
+		float:none;
+	}
+	.profile-text{
+		text-align: center;
+	}
+	.profile-text h4{
+		margin-top:20px;
+	}
+	/*-------------------<contact>-------------------*/
 	.contact{
+		width:100%;
 	}
 	.contact-wrapper{
-		width:100%;
+		width:90%;
+		margin-left:5%;
+		margin-right:5%;
 	}
 	.contact-box {
+		width:100%;
 		float:none;
+		text-align:center;
+	}
+	.mail-border{
+		margin:0 auto;
+	}
+	.tell-border{
+		margin:0 auto;
+		margin-bottom:20px;
+	}
+	.fa-twitter{
+	margin:0 8px;
 	}
 }
